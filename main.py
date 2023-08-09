@@ -9,14 +9,14 @@ from sklearn.neighbors import NearestNeighbors
 
 app = FastAPI(title='Proyecto Individual MLOPS ',description='Joaquin Millan Lanhozo')
 
-movies_language = pd.read_csv(r"C:\Users\tomas\Desktop\DS - HENRY\00.LABS\1.PIMLOPS\Funciones\movies_language.csv")
-movies = pd.read_csv(r"C:\Users\tomas\Desktop\DS - HENRY\00.LABS\1.PIMLOPS\GITHUB\Duracion_peliculas.csv")
-merge_franquicias = pd.read_csv(r"C:\Users\tomas\Desktop\DS - HENRY\00.LABS\1.PIMLOPS\Funciones\merge_franquicias.csv")
-countries_counts = pd.read_csv(r"C:\Users\tomas\Desktop\DS - HENRY\00.LABS\1.PIMLOPS\Funciones\countries_counts.csv")
-productoras_exitosas_df = pd.read_csv(r"C:\Users\tomas\Desktop\DS - HENRY\00.LABS\1.PIMLOPS\Funciones\productoras_exitosas_df.csv")
-franquicias = pd.read_csv(r"C:\Users\tomas\Desktop\DS - HENRY\00.LABS\1.PIMLOPS\GITHUB\franquicias.csv")
-directores = pd.read_csv(r"C:\Users\tomas\Desktop\DS - HENRY\00.LABS\1.PIMLOPS\GITHUB\directores.csv")
-modelo = pd.read_csv(r"C:\Users\tomas\Desktop\DS - HENRY\00.LABS\1.PIMLOPS\Funciones\modelo.csv")
+movies_language = pd.read_csv("movies_language.csv")
+movies = pd.read_csv("Duracion_peliculas.csv")
+merge_franquicias = pd.read_csv("merge_franquicias.csv")
+countries_counts = pd.read_csv("countries_counts.csv")
+productoras_exitosas_df = pd.read_csv("productoras_exitosas_df.csv")
+franquicias = pd.read_csv("franquicias.csv")
+directores = pd.read_csv("directores.csv")
+modelo = pd.read_csv("modelo.csv")
 
 
 @app.get('/peliculas_idioma/{idioma}')
