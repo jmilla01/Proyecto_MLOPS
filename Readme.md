@@ -18,8 +18,7 @@
 
 # SOY HENRY
 
-¡Bienvenidos al primer proyecto individual de la etapa de labs! En esta ocasión, deberán hacer un trabajo situándose en el rol de un ***MLOps Engineer***.  
-
+El trabajo aqui expuesto fue realizado durante la cursada en la institucion Soy Henry, formo parte de la cohorte DATAPT02 y este es el primer proyecto integrador enfocado en Machine Learning Operations
 <hr>  
 
 ## **Descripción del problema (Contexto y rol a desarrollar)**
