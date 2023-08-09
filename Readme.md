@@ -21,6 +21,10 @@
 El trabajo aqui expuesto fue realizado durante la cursada en la institucion Soy Henry, formo parte de la cohorte DATAPT02 y este es el primer proyecto integrador enfocado en Machine Learning Operations
 <hr>  
 
+# ARCHIVOS EN EL REPOSITORIO
+
+<hr> 
+
 ## Contexto
 
 Para este proyecto, simulamos ser Data Scientist para una start-up en la industria del Streaming. La start-up aun no cuenta con una plataforma desarrollada para poder obtener informacion respecto de las peliculas con las que cuenta la empresa. 
