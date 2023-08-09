@@ -25,10 +25,6 @@ El trabajo aqui expuesto fue realizado durante la cursada en la institucion Soy 
 
 Para este proyecto, simulamos ser Data Scientist para una start-up en la industria del Streaming. La start-up aun no cuenta con una plataforma desarrollada para poder obtener informacion respecto de las peliculas con las que cuenta la empresa. 
 
-Como primera tarea en nuestro rol, es crear una API para poder consultar informacion sobre las peliculas con las que cuenta la plataforma de streaming.
-
-Tambien hay que crear un recomendador de peliculas, al cual al ingresar una pelicula, debe devolver 5 peliculas similares.
-
 A lo largo del proyecto, se realizaran tareas de ETL (Extraccion, Transformacion y Carga de datos) se extraera informacion de los datasets propuestos, se realizaran algunas transformaciones a algunas columnas para poder tener dataframes mas robustos y completos para poder realizar el EDA (Analisis Exploratorio de Datos) que es un analisis de los datos para poder obtener informacion util.
 
 Luego, realizaremos un modelo de machine learning para poder dar recomendaciones de peliculas y finalmente, el desarrollo de una aplicacion.
@@ -36,33 +32,14 @@ Luego, realizaremos un modelo de machine learning para poder dar recomendaciones
 
 # Proyecto
 
-Como primer paso, realizamos la lectura de los datasets propuestos, son dos datasets: uno de "movies", con informacion de las peliculas y otro de "credits" con informacion del elenco que realizaron las peliculas.
++ Como primer paso, realizamos la lectura de los datasets propuestos, son dos datasets: uno de "movies", con informacion de las peliculas y otro de "credits" con informacion del elenco que realizaron las peliculas. De informacion, los datasets originalmente cuentan con 45466 peliculas
 
-+ El dataset de Movies cuenta con la siguiente informacion --> "adult"
+### **`Transformaciones`**:  La data que contenian los datasets no son perfectos, es por eso que se realizan transformaciones para poder utilizar esa data. Algunas columnas fueron transformadas, ya que contenian datos con formatos no adecuados y tambien datos agrupados, que habia que desanidar para poder disponibilizar el dato que contenian esas columnas. Tambien se eliminaron columnas inutiles, que no seran consideradas para el proposito de este proyecto.
 
-**`Transformaciones`**:  Para este MVP no necesitas perfección, ¡necesitas rapidez! ⏩ Vas a hacer estas, ***y solo estas***, transformaciones a los datos:
++**`Creacion de Funciones`**: Se crearon dataframes especificos y mas concretos para eficientizar y acotar el uso de las siguientes funciones. Estas funciones serviran para poder consultar informacion de las peliculas.
 
 
-+ Algunos campos, como **`belongs_to_collection`**, **`production_companies`** y otros (ver diccionario de datos) están anidados, esto es o bien tienen un diccionario o una lista como valores en cada fila, ¡deberán desanidarlos y unirlos al dataset de nuevo para hacer alguna de las consultas de la API! O bien buscar la manera de acceder a esos datos sin desanidarlos..
 
-+ Los valores nulos de los campos **`revenue`**, **`budget`** deben ser rellenados por el número **`0`**.
-  
-+ Los valores nulos del campo **`release date`** deben eliminarse.
-
-+ De haber fechas, deberán tener el formato **`AAAA-mm-dd`**, además deberán crear la columna **`release_year`** donde extraerán el año de la fecha de estreno.
-
-+ Crear la columna con el retorno de inversión, llamada **`return`** con los campos **`revenue`** y **`budget`**, dividiendo estas dos últimas **`revenue / budget`**, cuando no hay datos disponibles para calcularlo, deberá tomar el valor **`0`**.
-
-+ Eliminar las columnas que no serán utilizadas, **`video`**,**`imdb_id`**,**`adult`**,**`original_title`**,**`poster_path`** y **`homepage`**.
-
-<br/>
-
-`Lee de nuevo arriba y asegurate de que viste la parte donde pedimos *solamente* estas transformaciones` :sunglasses:
-
-**`Desarrollo API`**:   Propones disponibilizar los datos de la empresa usando el framework ***FastAPI***. Las consultas que propones son las siguientes:
-
-Deben crear 6 funciones para los endpoints que se consumirán en la API, recuerden que deben tener un decorador por cada una (@app.get(‘/’)).
-  
 + def **peliculas_idioma( *`Idioma`: str* )**:
     Se ingresa un idioma (como están escritos en el dataset, no hay que traducirlos!). Debe devolver la cantidad de películas producidas en ese idioma.
 
