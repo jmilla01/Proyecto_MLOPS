@@ -34,14 +34,12 @@ Luego, realizaremos un modelo de machine learning para poder dar recomendaciones
 
 + Como primer paso, realizamos la lectura de los datasets propuestos, son dos datasets: uno de "movies", con informacion de las peliculas y otro de "credits" con informacion del elenco que realizaron las peliculas. Los datasets originalmente cuentan con 45466 peliculas
 
-### **`Transformaciones`**:  La data que contenian los datasets no son perfectos, es por eso que se realizan transformaciones para poder utilizar esa data. Algunas columnas fueron transformadas, ya que contenian datos con formatos no adecuados y tambien datos agrupados, que habia que desanidar para poder disponibilizar el dato que contenian esas columnas. Tambien se eliminaron columnas inutiles, que no seran consideradas para el proposito de este proyecto.
++ **`Transformaciones`**:  La data que contenian los datasets no son perfectos, es por eso que se realizan transformaciones para poder utilizar esa data. Algunas columnas fueron transformadas, ya que contenian datos con formatos no adecuados y tambien datos agrupados, que habia que desanidar para poder disponibilizar el dato que contenian esas columnas. Tambien se eliminaron columnas inutiles, que no seran consideradas para el proposito de este proyecto.
 
-+**`Creacion de Funciones`**: Se crearon dataframes especificos y mas concretos para eficientizar y acotar el uso de las siguientes funciones. Estas funciones serviran para poder consultar informacion de las peliculas.
-
-
++ **`Creacion de Funciones`**: Se crearon dataframes especificos y mas concretos para eficientizar y acotar el uso de las siguientes funciones. Estas funciones serviran para poder consultar informacion de las peliculas.
 
 + def **peliculas_idioma( *`Idioma`: str* )**:
-    Se ingresa un idioma (como están escritos en el dataset, no hay que traducirlos!). Debe devolver la cantidad de películas producidas en ese idioma.
+    Funcion en la cual se ingresa un idioma y retorna la cantidad de películas producidas en ese idioma.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ejemplo de retorno: *`X` cantidad de películas fueron estrenadas en `idioma`*
          
