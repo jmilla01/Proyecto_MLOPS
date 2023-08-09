@@ -27,12 +27,12 @@ Para este proyecto, simulamos ser Data Scientist para una start-up en la industr
 
 A lo largo del proyecto, se realizaran tareas de ETL (Extraccion, Transformacion y Carga de datos) se extraera informacion de los datasets propuestos, se realizaran algunas transformaciones a algunas columnas para poder tener dataframes mas robustos y completos para poder realizar el EDA (Analisis Exploratorio de Datos) que es un analisis de los datos para poder obtener informacion util.
 
-Luego, realizaremos un modelo de machine learning para poder dar recomendaciones de peliculas y finalmente, el desarrollo de una aplicacion.
+Luego, realizaremos un modelo de machine learning para poder dar recomendaciones de peliculas y finalmente, el desarrollo de una aplicacion para poder disponibilizar esos datos para que los usuarios puedan consumirlos.
 
 
 # Proyecto
 
-+ Como primer paso, realizamos la lectura de los datasets propuestos, son dos datasets: uno de "movies", con informacion de las peliculas y otro de "credits" con informacion del elenco que realizaron las peliculas. De informacion, los datasets originalmente cuentan con 45466 peliculas
++ Como primer paso, realizamos la lectura de los datasets propuestos, son dos datasets: uno de "movies", con informacion de las peliculas y otro de "credits" con informacion del elenco que realizaron las peliculas. Los datasets originalmente cuentan con 45466 peliculas
 
 ### **`Transformaciones`**:  La data que contenian los datasets no son perfectos, es por eso que se realizan transformaciones para poder utilizar esa data. Algunas columnas fueron transformadas, ya que contenian datos con formatos no adecuados y tambien datos agrupados, que habia que desanidar para poder disponibilizar el dato que contenian esas columnas. Tambien se eliminaron columnas inutiles, que no seran consideradas para el proposito de este proyecto.
 
