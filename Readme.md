@@ -34,11 +34,11 @@ Luego, realizaremos un modelo de machine learning para poder dar recomendaciones
 
 + Como primer paso, realizamos la lectura de los datasets propuestos, son dos datasets: uno de "movies", con informacion de las peliculas y otro de "credits" con informacion del elenco que realizaron las peliculas. Los datasets originalmente cuentan con 45466 peliculas
 
-+ `Transformaciones`:  La data que contenian los datasets no son perfectos, es por eso que se realizan transformaciones para poder utilizar esa data. Algunas columnas fueron transformadas, ya que contenian datos con formatos no adecuados y tambien datos agrupados, que habia que desanidar para poder disponibilizar el dato que contenian esas columnas. Tambien se eliminaron columnas inutiles, que no seran consideradas para el proposito de este proyecto.
++ Transformaciones:  La data que contenian los datasets no son perfectos, es por eso que se realizan transformaciones para poder utilizar esa data. Algunas columnas fueron transformadas, ya que contenian datos con formatos no adecuados y tambien datos agrupados, que habia que desanidar para poder disponibilizar el dato que contenian esas columnas. Tambien se eliminaron columnas inutiles, que no seran consideradas para el proposito de este proyecto.
 
-+ **`Tratamientos de valores faltantes`**: Hay algunos valores nulos a los cuales se realizo un tratamiento de caso que se haya considerado necesario
++ ** Tratamientos de valores faltantes**: Hay algunos valores nulos a los cuales se realizo un tratamiento de caso que se haya considerado necesario
 
-## `Creacion de Funciones`
+## Creacion de Funciones
   Se crearon dataframes especificos y mas concretos para eficientizar y acotar el uso de las siguientes funciones. Estas funciones serviran para poder consultar informacion de las peliculas.
 
 + **peliculas_idioma( *`Idioma`: str* )**:
@@ -70,7 +70,7 @@ Luego, realizaremos un modelo de machine learning para poder dar recomendaciones
 + **get_director( *`nombre_director`* )**:
     Al ingresar en esta funcion el nombre de un director que se encuentre en el dataset devuelve el éxito del mismo medido a través del retorno. Además, devuelve el nombre de cada película dirigida con la fecha de lanzamiento, retorno individual, costo y ganancia de la misma.
 
-+ **`Sistema de recomendación`**: 
++ **Sistema de recomendación**: 
     A esta funcion, se ingresa el nombre de una película y recomienda 5 peliculas similares.
 
 # EDA (Analisis Exploratorio de Datos)
@@ -102,7 +102,7 @@ Tambien hay otro crecimiento exponencial marcado en los años 80, ya que las inn
  A partir de la década de 1990, sobre todo de los 2000 en adelante,  la tecnología digital comenzó a revolucionar la producción y distribución de películas. El auge de Internet también cambió la forma en que las películas se promocionaban y se distribuían.Acompañado a ello vino el apogeo de un monton de peliculas junto a avances tecnologicos y desarrollo exponencial de la industria cinematografica.
 
 
-# `Deployment`
+# Deployment
 
 Para finalizar, se realiza la disponibilizacion en un servicio web para que pueda ser consumida por los usuarios 
 + [API](https://ejemplo-joaquinmillan-deploy.onrender.com/docs)
