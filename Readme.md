@@ -1,4 +1,4 @@
-<p align=center><img src=https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png><p>
+<p align=center><img src=[https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png](https://neurona-ba.com/wp-content/uploads/2021/07/HenryLogo.jpg)><p>
 
 # <h1 align=center> **PROYECTO INDIVIDUAL MACHINE LEARNING OPERATIONS (MLOPS)** </h1>
 
