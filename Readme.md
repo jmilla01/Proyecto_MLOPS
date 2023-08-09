@@ -21,30 +21,24 @@
 El trabajo aqui expuesto fue realizado durante la cursada en la institucion Soy Henry, formo parte de la cohorte DATAPT02 y este es el primer proyecto integrador enfocado en Machine Learning Operations
 <hr>  
 
-## **Descripción del problema (Contexto y rol a desarrollar)**
-
 ## Contexto
 
-Tienes tu modelo de recomendación dando unas buenas métricas :smirk:, y ahora, cómo lo llevas al mundo real? :eyes:
+Para este proyecto, simulamos ser Data Scientist para una start-up en la industria del Streaming. La start-up aun no cuenta con una plataforma desarrollada para poder obtener informacion respecto de las peliculas con las que cuenta la empresa. 
 
-El ciclo de vida de un proyecto de Machine Learning debe contemplar desde el tratamiento y recolección de los datos (Data Engineer stuff) hasta el entrenamiento y mantenimiento del modelo de ML según llegan nuevos datos.
+Como primera tarea en nuestro rol, es crear una API para poder consultar informacion sobre las peliculas con las que cuenta la plataforma de streaming.
+
+Tambien hay que crear un recomendador de peliculas, al cual al ingresar una pelicula, debe devolver 5 peliculas similares.
+
+A lo largo del proyecto, se realizaran tareas de ETL (Extraccion, Transformacion y Carga de datos) se extraera informacion de los datasets propuestos, se realizaran algunas transformaciones a algunas columnas para poder tener dataframes mas robustos y completos para poder realizar el EDA (Analisis Exploratorio de Datos) que es un analisis de los datos para poder obtener informacion util.
+
+Luego, realizaremos un modelo de machine learning para poder dar recomendaciones de peliculas y finalmente, el desarrollo de una aplicacion.
 
 
-## Rol a desarrollar
+# Proyecto
 
-Empezaste a trabajar como **`Data Scientist`** en una start-up que provee servicios de agregación de plataformas de streaming. El mundo es bello y vas a crear tu primer modelo de ML que soluciona un problema de negocio: un sistema de recomendación que aún no ha sido puesto en marcha! 
+Como primer paso, realizamos la lectura de los datasets propuestos, son dos datasets: uno de "movies", con informacion de las peliculas y otro de "credits" con informacion del elenco que realizaron las peliculas.
 
-Vas a sus datos y te das cuenta que la madurez de los mismos es poca (ok, es nula :sob:): Datos anidados, sin transformar, no hay procesos automatizados para la actualización de nuevas películas o series, entre otras cosas….  haciendo tu trabajo imposible :weary:. 
-
-Debes empezar desde 0, haciendo un trabajo rápido de **`Data Engineer`** y tener un **`MVP`** (_Minimum Viable Product_) para el cierre del proyecto! Tu cabeza va a explotar 🤯, pero al menos sabes cual es, conceptualmente, el camino que debes de seguir :exclamation:. Así que te espantas los miedos y te pones manos a la obra :muscle:
-
-<p align="center">
-<img src="https://github.com/HX-PRomero/PI_ML_OPS/raw/main/src/DiagramaConceptualDelFlujoDeProcesos.png"  height=500>
-</p>
-
-<sub> Nota que aqui se reflejan procesos no herramientas tecnologicas. Has el ejercicio de entender cual herramienta del stack corresponde a cual parte del proceso<sub/>
-
-## **Propuesta de trabajo (requerimientos de aprobación)**
++ El dataset de Movies cuenta con la siguiente informacion --> "adult"
 
 **`Transformaciones`**:  Para este MVP no necesitas perfección, ¡necesitas rapidez! ⏩ Vas a hacer estas, ***y solo estas***, transformaciones a los datos:
 
