@@ -147,4 +147,5 @@ Para finalizar, se realiza la disponibilizacion en un servicio web para que pued
 +  Libreria plotly [Plotly](https://plotly.com/python/)
 +  FastApi [FastApi](https://fastapi.tiangolo.com/)
 +  Render [Render](https://render.com/)
++  Plotly [Plotly](https://plotly.com/graphing-libraries/)
 
