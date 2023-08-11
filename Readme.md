@@ -25,6 +25,20 @@ El trabajo aqui expuesto fue realizado durante la cursada en la institucion Soy 
 
 <hr> 
 
++ carpeta "env" --> Tiene el entorno virtual generado para este proyecto.
++ "duracion_peliculas.csv" --> Archivo especifico generado para la consulta de la funcion "peliculas_duracion"
++ "peliculas_paises.csv" --> Csv generado para la funcion de "peliculas_pais"
++ "productoras_exitosas.csv" --> Sub dataset confeccionado para la consulta de la funcion de "productoras_exitosas"
++ countries_counts.csv --> Este csv cuenta con informacion del conteo de las peliculas realizadas por los paises. Funcion "peliculas_pais"
++ "directores.csv" --> Dataframe exportado a csv realizado para la funcion de "get_director"
++ "franquicias.csv" --> Csv elaborado con la informacion necesaria para la funcion "franquicia"
++ "main.py" --> Archivo en donde corren las funciones y por donde realice el deploy a FastApi y disponibilzado luego por Render.
++ "merge_franquicias.csv" --> Csv elaborado con la informacion necesaria para la funcion "franquicia"
++ "productoras_exitosas_df.csv" --> Sub dataset confeccionado para la consulta de la funcion de "productoras_exitosas"
++ "requirements.txt" --> Archivo con las librerias utilizadas y sus versiones.
+
+
+
 ## Contexto
 
 Para este proyecto, simulamos ser Data Scientist para una start-up en la industria del Streaming. La start-up aun no cuenta con una plataforma desarrollada para poder obtener informacion respecto de las peliculas con las que cuenta la empresa. 
@@ -118,4 +132,19 @@ Para finalizar, se realiza la disponibilizacion en un servicio web para que pued
 
 # Video Deploy
 + [Video](https://drive.google.com/file/d/1uGitaE-bxqTLBstm2RpZiYsGZ_pokkSk/view?usp=drive_link)
+
+# Stack tecnologico
+
++  Notebook desarrollada en python a traves de Visual Studio Code.
++  Libreria numpy -- [Numpy](https://numpy.org/)
++  Libreria pandas -- [Pandas](https://pandas.pydata.org/)
++  Libreria matplotlib -- [Matplotlib](https://matplotlib.org/)
++  Libreria seaborn -- [Seaborn](https://seaborn.pydata.org/)
++  Libreria datetime -- [Datetime](https://docs.python.org/es/3/library/datetime.html)
++  Libreria missingno -- [Missingno](https://pypi.org/project/missingno/)
++  Libreria ast -- [ast](https://docs.python.org/3/library/ast.html)
++  Libreria sklearn -- [sklearn](https://scikit-learn.org/stable/)
++  Libreria plotly [Plotly](https://plotly.com/python/)
++  FastApi [FastApi](https://fastapi.tiangolo.com/)
++  Render [Render](https://render.com/)
 
