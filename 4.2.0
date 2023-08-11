@@ -1,0 +1,24 @@
+Collecting nbformat
+  Downloading nbformat-5.9.2-py3-none-any.whl (77 kB)
+     ---------------------------------------- 0.0/77.6 kB ? eta -:--:--     ---------------------------------------- 77.6/77.6 kB 2.2 MB/s eta 0:00:00
+Collecting fastjsonschema
+  Downloading fastjsonschema-2.18.0-py3-none-any.whl (23 kB)
+Requirement already satisfied: traitlets>=5.1 in c:\users\tomas\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from nbformat) (5.9.0)
+Collecting jsonschema>=2.6
+  Downloading jsonschema-4.19.0-py3-none-any.whl (83 kB)
+     ---------------------------------------- 0.0/83.4 kB ? eta -:--:--     ---------------------------------------- 83.4/83.4 kB 2.3 MB/s eta 0:00:00
+Requirement already satisfied: jupyter-core in c:\users\tomas\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from nbformat) (5.2.0)
+Collecting rpds-py>=0.7.1
+  Downloading rpds_py-0.9.2-cp310-none-win_amd64.whl (180 kB)
+     ---------------------------------------- 0.0/180.7 kB ? eta -:--:--     ----------------------------------- - 174.1/180.7 kB 10.2 MB/s eta 0:00:01     -------------------------------------- 180.7/180.7 kB 3.6 MB/s eta 0:00:00
+Collecting jsonschema-specifications>=2023.03.6
+  Downloading jsonschema_specifications-2023.7.1-py3-none-any.whl (17 kB)
+Collecting attrs>=22.2.0
+  Downloading attrs-23.1.0-py3-none-any.whl (61 kB)
+     ---------------------------------------- 0.0/61.2 kB ? eta -:--:--     ---------------------------------------- 61.2/61.2 kB 3.4 MB/s eta 0:00:00
+Collecting referencing>=0.28.4
+  Downloading referencing-0.30.2-py3-none-any.whl (25 kB)
+Requirement already satisfied: pywin32>=1.0 in c:\users\tomas\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from jupyter-core->nbformat) (305)
+Requirement already satisfied: platformdirs>=2.5 in c:\users\tomas\appdata\local\packages\pythonsoftwarefoundation.python.3.10_qbz5n2kfra8p0\localcache\local-packages\python310\site-packages (from jupyter-core->nbformat) (3.0.0)
+Installing collected packages: fastjsonschema, rpds-py, attrs, referencing, jsonschema-specifications, jsonschema, nbformat
+Successfully installed attrs-23.1.0 fastjsonschema-2.18.0 jsonschema-4.19.0 jsonschema-specifications-2023.7.1 nbformat-5.9.2 referencing-0.30.2 rpds-py-0.9.2
