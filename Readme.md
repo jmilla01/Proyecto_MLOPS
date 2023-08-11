@@ -131,21 +131,20 @@ Para finalizar, se realiza la disponibilizacion en un servicio web para que pued
 + [Diccionario de datos](https://docs.google.com/spreadsheets/d/1QkHH5er-74Bpk122tJxy_0D49pJMIwKLurByOfmxzho/edit#gid=0): Diccionario con algunas descripciones de las columnas disponibles en el dataset.
 
 # Video Deploy
-+ [Video](https://drive.google.com/file/d/1uGitaE-bxqTLBstm2RpZiYsGZ_pokkSk/view?usp=drive_link)
++ [Video](https://drive.google.com/file/d/1uGitaE-bxqTLBstm2RpZiYsGZ_pokkSk/view?usp=drive_link) Video con el deploy y la prueba de las funciones.
 
 # Stack tecnologico
 
 +  Notebook desarrollada en python a traves de Visual Studio Code.
-+  Libreria numpy -- [Numpy](https://numpy.org/)
-+  Libreria pandas -- [Pandas](https://pandas.pydata.org/)
-+  Libreria matplotlib -- [Matplotlib](https://matplotlib.org/)
-+  Libreria seaborn -- [Seaborn](https://seaborn.pydata.org/)
-+  Libreria datetime -- [Datetime](https://docs.python.org/es/3/library/datetime.html)
-+  Libreria missingno -- [Missingno](https://pypi.org/project/missingno/)
-+  Libreria ast -- [ast](https://docs.python.org/3/library/ast.html)
-+  Libreria sklearn -- [sklearn](https://scikit-learn.org/stable/)
-+  Libreria plotly [Plotly](https://plotly.com/python/)
-+  FastApi [FastApi](https://fastapi.tiangolo.com/)
-+  Render [Render](https://render.com/)
-+  Plotly [Plotly](https://plotly.com/graphing-libraries/)
++  Libreria numpy -- [Numpy](https://numpy.org/) Numerical Pyhton útil para realizar cálculos lógicos y matemáticos sobre cuadros y matrices.
++  Libreria pandas -- [Pandas](https://pandas.pydata.org/) Pandas es una librería de Python especializada en el manejo y análisis de estructuras de datos
++  Libreria matplotlib -- [Matplotlib](https://matplotlib.org/) Matplotlib libreria para la visualizacion de datos.
++  Libreria seaborn -- [Seaborn](https://seaborn.pydata.org/) Seaborn libreria para la visualizacion de datos.
++  Libreria datetime -- [Datetime](https://docs.python.org/es/3/library/datetime.html) Datetime libreria utilizada para la transformacion a formato fecha
++  Libreria missingno -- [Missingno](https://pypi.org/project/missingno/) Miisingno visualizacion efectiva de datos nulos
++  Libreria ast -- [ast](https://docs.python.org/3/library/ast.html) El módulo ast ayuda a las aplicaciones de Python a procesar árboles de la gramática de sintaxis abstracta de Python.
++  Libreria sklearn -- [sklearn](https://scikit-learn.org/stable/) Sklearn libreria utilizada para el modelo de Machine Learning
++  Libreria plotly [Plotly](https://plotly.com/python/) Plotly libreria para la visualizacion de datos.
++  FastApi [FastApi](https://fastapi.tiangolo.com/) FastAPI es un web framework para la creacion de APIs con Python 3.7
++  Render [Render](https://render.com/) Utilzacion de Render para el deploy de la API
 
