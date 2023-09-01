@@ -16,12 +16,24 @@
 
 # JOAQUIN MILLAN LANHOZO - AGOSTO 2023 - DTPT02
 
-# SOY HENRY
+## SOY HENRY
 
 El trabajo aqui expuesto fue realizado durante la cursada en la institucion Soy Henry, formo parte de la cohorte DATAPT02 y este es el primer proyecto integrador enfocado en Machine Learning Operations
 <hr>  
 
-# ARCHIVOS EN EL REPOSITORIO
+
+## Tabla de contenidos
+- [Archivos en el Repositorio](#archivos-en-el-repositorio)
+- [Contexto](#contexto)
+- [Proyecto](#proyecto)
+- [Deployment](#deployment)
+- [Fuentes de datos](#fuente-de-datos)
+- [Video deploy](#video-deploy)
+- [Stack tecnologico](#stack-tecnologico)
+
+<hr> 
+
+## ARCHIVOS EN EL REPOSITORIO
 
 <hr> 
 
@@ -37,6 +49,9 @@ El trabajo aqui expuesto fue realizado durante la cursada en la institucion Soy 
 + "productoras_exitosas_df.csv" --> Sub dataset confeccionado para la consulta de la funcion de "productoras_exitosas"
 + "requirements.txt" --> Archivo con las librerias utilizadas y sus versiones.
 
+[Tabla de Contenidos](#tabla-de-contenidos)
+
+
 
 
 ## Contexto
@@ -47,8 +62,9 @@ A lo largo del proyecto, se realizaran tareas de ETL (Extraccion, Transformacion
 
 Luego, realizaremos un modelo de machine learning para poder dar recomendaciones de peliculas y finalmente, el desarrollo de una aplicacion para poder disponibilizar esos datos para que los usuarios puedan consumirlos.
 
+[Tabla de Contenidos](#tabla-de-contenidos)
 
-# Proyecto
+## Proyecto
 
 + Como primer paso, realizamos la lectura de los datasets propuestos, son dos datasets: uno de "movies", con informacion de las peliculas y otro de "credits" con informacion del elenco que realizaron las peliculas. Los datasets originalmente cuentan con 45466 peliculas
 
@@ -56,7 +72,7 @@ Luego, realizaremos un modelo de machine learning para poder dar recomendaciones
 
 + ** Tratamientos de valores faltantes**: Hay algunos valores nulos a los cuales se realizo un tratamiento de caso que se haya considerado necesario
 
-## Creacion de Funciones
+### Creacion de Funciones
   Se crearon dataframes especificos y mas concretos para eficientizar y acotar el uso de las siguientes funciones. Estas funciones serviran para poder consultar informacion de las peliculas.
 
 + **peliculas_idioma( *`Idioma`: str* )**:
@@ -91,7 +107,8 @@ Luego, realizaremos un modelo de machine learning para poder dar recomendaciones
 + **Sistema de recomendación**: 
     A esta funcion, se ingresa el nombre de una película y recomienda 5 peliculas similares.
 
-# EDA (Analisis Exploratorio de Datos)
+
+### EDA - Analisis Exploratorio de Datos
 
 Se realizo un analisis exhaustivo de los datos, en el cual podemos ver datos sobre los idiomas hablados en las peliculas, informacion respecto de los paises productores, los lenguajes originales de las peliculas. las compañias productoras,  colecciones de peliculas, las fechas de estreno, los presupuestos, ganancias, puntajes y valoraciones, generos, actores y directores. 
 
@@ -119,21 +136,28 @@ Tambien hay otro crecimiento exponencial marcado en los años 80, ya que las inn
 
  A partir de la década de 1990, sobre todo de los 2000 en adelante,  la tecnología digital comenzó a revolucionar la producción y distribución de películas. El auge de Internet también cambió la forma en que las películas se promocionaban y se distribuían.Acompañado a ello vino el apogeo de un monton de peliculas junto a avances tecnologicos y desarrollo exponencial de la industria cinematografica.
 
+ [Tabla de Contenidos](#tabla-de-contenidos)
 
-# Deployment
+## Deployment
 
 Para finalizar, se realiza la disponibilizacion en un servicio web para que pueda ser consumida por los usuarios 
 + [API](https://ejemplo-joaquinmillan-deploy.onrender.com/docs)
 
-# Fuente de datos
+[Tabla de Contenidos](#tabla-de-contenidos)
+
+## Fuente de datos
 
 + [Dataset](https://drive.google.com/drive/folders/1mfUVyP3jS-UMdKHERknkQ4gaCRCO2e1v): Carpeta con los 2 archivos con datos que requieren ser procesados (movies_dataset.csv y credits.csv), tengan en cuenta que hay datos que estan anidados (un diccionario o una lista como valores en la fila).
 + [Diccionario de datos](https://docs.google.com/spreadsheets/d/1QkHH5er-74Bpk122tJxy_0D49pJMIwKLurByOfmxzho/edit#gid=0): Diccionario con algunas descripciones de las columnas disponibles en el dataset.
 
-# Video Deploy
+[Tabla de Contenidos](#tabla-de-contenidos)
+
+## Video Deploy
 + [Video](https://drive.google.com/file/d/1uGitaE-bxqTLBstm2RpZiYsGZ_pokkSk/view?usp=drive_link)
 
-# Stack tecnologico
+[Tabla de Contenidos](#tabla-de-contenidos)
+
+## Stack tecnologico
 
 +  Notebook desarrollada en python a traves de Visual Studio Code.
 +  Libreria numpy -- [Numpy](https://numpy.org/)
@@ -148,4 +172,6 @@ Para finalizar, se realiza la disponibilizacion en un servicio web para que pued
 +  FastApi [FastApi](https://fastapi.tiangolo.com/)
 +  Render [Render](https://render.com/)
 +  Plotly [Plotly](https://plotly.com/graphing-libraries/)
+
+[Tabla de Contenidos](#tabla-de-contenidos)
 
