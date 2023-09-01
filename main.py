@@ -21,7 +21,10 @@ modelo = pd.read_csv("modelo.csv")
 
 @app.get('/peliculas_idioma/{idioma}')
 def peliculas_idioma(idioma:str):
-    '''Ingresas el idioma, retornando la cantidad de peliculas producidas en el mismo'''
+    '''Ingresas el idioma, retornando la cantidad de peliculas producidas en el mismo
+    
+     Por ejemplo: "en"
+    '''
     idioma = idioma.lower()
     idioma = str(idioma)
 
@@ -39,7 +42,10 @@ def peliculas_idioma(idioma:str):
 
 @app.get('/peliculas_duracion/{pelicula}')
 def peliculas_duracion(pelicula:str):
-    '''Ingresas la pelicula, retornando la duracion y el año de estreno de la pelicula'''
+    '''Ingresas la pelicula, retornando la duracion y el año de estreno de la pelicula
+
+    Por ejemplo: Jumanji    
+    '''
     pelicula = pelicula.lower().title()
     pelicula = str(pelicula)
 
@@ -56,7 +62,10 @@ def peliculas_duracion(pelicula:str):
     
 @app.get('/franquicia/{franquicia}')
 def franquicias(franquicia:str):
-    '''Se ingresa la franquicia, retornando la cantidad de peliculas, ganancia total y promedio'''
+    '''Se ingresa la franquicia, retornando la cantidad de peliculas, ganancia total y promedio
+    
+    Por ejemplo: James Bond Collection
+    '''
     franquicia = str(franquicia)
     if franquicia in merge_franquicias["Franchise"].values:
         
@@ -74,7 +83,10 @@ def franquicias(franquicia:str):
 
 @app.get('/peliculas_pais/{pais}')
 def peliculas_pais(pais:str):
-    '''Ingresas el pais, retornando la cantidad de peliculas producidas en el mismo'''
+    '''Ingresas el pais, retornando la cantidad de peliculas producidas en el mismo
+    
+    Por ejemplo: Argentina
+    '''
     
     pais = str(pais)
     if pais in countries_counts["production_countries_names"].values:
@@ -90,7 +102,10 @@ def peliculas_pais(pais:str):
 
 @app.get('/productoras_exitosas/{productora}')
 def productoras_exitosas(productora:str):
-    '''Se ingresa la franquicia, retornando la cantidad de peliculas, ganancia total y promedio'''
+    '''Se ingresa la franquicia, retornando la cantidad de peliculas, ganancia total y promedio
+    
+    Por ejemplo: Warner Bros.
+    '''
     productora = str(productora)
 
     if productora in productoras_exitosas_df.Production_Company.values:
@@ -112,6 +127,8 @@ def get_director(nombre_director):
     Se ingresa el nombre de un director que se encuentre dentro de un dataset debiendo devolver el éxito del mismo 
     medido a través del retorno. Además, deberá devolver el nombre de cada película con la fecha de lanzamiento, 
     retorno individual, costo y ganancia de la misma, en formato lista.
+
+    Por ejemplo: John Lasseter
     """ 
     
     peliculas_director = directores[directores['director_name'] == nombre_director]
