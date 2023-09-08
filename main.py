@@ -5,6 +5,8 @@ import uvicorn
 import pandas as pd
 import numpy as np
 from sklearn.neighbors import NearestNeighbors
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import linear_kernel
 
 
 app = FastAPI(title='Proyecto Individual MLOPS ',description='Joaquin Millan Lanhozo')
@@ -197,3 +199,29 @@ def recomendacion(titulo:str):
 
     return {'lista recomendada': 
             recomendadas}
+
+
+df_movies2 = modelo[[ 'overview', 'title', 'popularity']]
+df_movies2["overview"] = df_movies2["overview"].astype(str)
+tfidf= TfidfVectorizer(stop_words='english')
+df_movies2['overview'] = df_movies2['overview'].fillna('')
+
+tfidf_matrix = tfidf.fit_transform(df_movies2['overview'])
+
+cosine_sim= linear_kernel(tfidf_matrix, tfidf_matrix)
+@app.get('/recomendacion_td/{titulo}')
+def recomendacion_td(titulo:str, cosine_sim= cosine_sim):
+
+    indices=pd.Series(df_movies2.index, index=df_movies2['title']).drop_duplicates()
+
+    idx= indices[titulo]
+    
+    sim_scores= list(enumerate(cosine_sim[idx]))
+    
+    sim_scores= sorted(sim_scores, key=lambda x : x[1], reverse=True)
+    
+    sim_scores=sim_scores[1:6]
+    
+    movies_indices= [i[0] for i in sim_scores]
+    
+    return df_movies2['title'].iloc[movies_indices]

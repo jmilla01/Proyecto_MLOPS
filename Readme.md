@@ -72,39 +72,36 @@ Luego, realizaremos un modelo de machine learning para poder dar recomendaciones
 
 + ** Tratamientos de valores faltantes**: Hay algunos valores nulos a los cuales se realizó un tratamiento de caso que se haya considerado necesario
 
-<<<<<<< HEAD
-### Creacion de Funciones
-  Se crearon dataframes especificos y mas concretos para eficientizar y acotar el uso de las siguientes funciones. Estas funciones serviran para poder consultar informacion de las peliculas.
-=======
+
 ## Creacion de Funciones
   Se crearon dataframes específicos y más concretos para eficientizar y acotar el uso de las siguientes funciones. Estas funciones servirán para poder consultar información de las películas.
->>>>>>> 2e8b6e187362b6888e04ad030626e897cc36fc4e
+
 
 + **peliculas_idioma( *`Idioma`: str* )**:
     Función en la cual se ingresa un idioma y retorna la cantidad de películas producidas en ese idioma.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ejemplo de retorno: *`X` cantidad de películas fueron estrenadas en `idioma`*
+Ejemplo de retorno: *`X` cantidad de películas fueron estrenadas en `idioma`*
          
 
 + **peliculas_duracion( *`Pelicula`: str* )**:
     Función a la cual se le ingresa una pelicula y devuelve la duración y el año de estreno.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ejemplo de retorno: *`X` . Duración: `x`. Año: `xx`*
+Ejemplo de retorno: *`X` . Duración: `x`. Año: `xx`*
 
 + **franquicia( *`Franquicia`: str* )**:
     Esta función recibe un input de la franquicia, y retorna la cantidad de peliculas, ganancia total de la franquicia y el promedio de ganancias
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ejemplo de retorno: *La franquicia `X` posee `X` peliculas, una ganancia total de `x` y una ganancia promedio de `xx`*
+Ejemplo de retorno: *La franquicia `X` posee `X` peliculas, una ganancia total de `x` y una ganancia promedio de `xx`*
 
 + **peliculas_pais( *`Pais`: str* )**:
     La función al ingresarle un país , devuelva la cantidad de peliculas que fueron producidas en el mismo.
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ejemplo de retorno: *Se produjeron `X` películas en el país `X`*
+Ejemplo de retorno: *Se produjeron `X` películas en el país `X`*
 
 + **productoras_exitosas( *`Productora`: str* )**:
     Esta función recibe el nombre de una productora, y entrega la ganancia total y la cantidad de peliculas que realizó. 
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ejemplo de retorno: *La productora `X` ha tenido un revenue de `x`*
+Ejemplo de retorno: *La productora `X` ha tenido un revenue de `x`*
 
 + **get_director( *`nombre_director`* )**:
     Al ingresar en esta función el nombre de un director que se encuentre en el dataset devuelve el éxito del mismo medido a través del retorno. Además, devuelve el nombre de cada película dirigida con la fecha de lanzamiento, retorno individual, costo y ganancia de la misma.
@@ -139,13 +136,13 @@ También hay otro crecimiento exponencial marcado en los años 80, ya que las in
 
  A medida que las películas se volvían más accesibles y la globalización avanzaba, el cine de diferentes países y culturas ganó popularidad en todo el mundo.
 
-<<<<<<< HEAD
+
  A partir de la década de 1990, sobre todo de los 2000 en adelante,  la tecnología digital comenzó a revolucionar la producción y distribución de películas. El auge de Internet también cambió la forma en que las películas se promocionaban y se distribuían.Acompañado a ello vino el apogeo de un monton de peliculas junto a avances tecnologicos y desarrollo exponencial de la industria cinematografica.
 
  [Tabla de Contenidos](#tabla-de-contenidos)
 =======
  A partir de la década de 1990, sobre todo de los 2000 en adelante, la tecnología digital comenzó a revolucionar la producción y distribución de películas. El auge de Internet también cambió la forma en que las películas se promocionaban y se distribuían. Acompañado a ello vino el apogeo de un montón de películas junto a avances tecnológicos y desarrollo exponencial de la industria cinematográfica.
->>>>>>> 2e8b6e187362b6888e04ad030626e897cc36fc4e
+
 
 ## Deployment
 
@@ -159,7 +156,7 @@ Para finalizar, se realiza la disponibilizacion en un servicio web para que pued
 + [Dataset](https://drive.google.com/drive/folders/1mfUVyP3jS-UMdKHERknkQ4gaCRCO2e1v): Carpeta con los 2 archivos con datos que requieren ser procesados (movies_dataset.csv y credits.csv), tengan en cuenta que hay datos que estan anidados (un diccionario o una lista como valores en la fila).
 + [Diccionario de datos](https://docs.google.com/spreadsheets/d/1QkHH5er-74Bpk122tJxy_0D49pJMIwKLurByOfmxzho/edit#gid=0): Diccionario con algunas descripciones de las columnas disponibles en el dataset.
 
-<<<<<<< HEAD
+
 [Tabla de Contenidos](#tabla-de-contenidos)
 
 ## Video Deploy
@@ -167,7 +164,7 @@ Para finalizar, se realiza la disponibilizacion en un servicio web para que pued
 =======
 # Video Deploy
 + [Video](https://drive.google.com/file/d/1uGitaE-bxqTLBstm2RpZiYsGZ_pokkSk/view?usp=drive_link) Video con el deploy y la prueba de las funciones.
->>>>>>> 2e8b6e187362b6888e04ad030626e897cc36fc4e
+
 
 [Tabla de Contenidos](#tabla-de-contenidos)
 
