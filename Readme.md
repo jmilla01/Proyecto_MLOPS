@@ -114,6 +114,7 @@ Ejemplo de retorno: *La productora `X` ha tenido un revenue de `x`*
 
 ### EDA - Analisis Exploratorio de Datos
 
+
 Se realizo un análisis exhaustivo de los datos, en el cual podemos ver datos sobre los idiomas hablados en las películas, información respecto de los países productores, los lenguajes originales de las películas. Las compañías productoras, colecciones de películas, las fechas de estreno, los presupuestos, ganancias, puntajes y valoraciones, géneros, actores y directores. 
 
 El dataset acompaña y refleja muy bien, a lo que es la historia del cine. Hitos históricos, sociales y tecnológicas contribuyeron al desarrollo de la industria. 
@@ -141,8 +142,6 @@ También hay otro crecimiento exponencial marcado en los años 80, ya que las in
 
  A partir de la década de 1990, sobre todo de los 2000 en adelante,  la tecnología digital comenzó a revolucionar la producción y distribución de películas. El auge de Internet también cambió la forma en que las películas se promocionaban y se distribuían.Acompañado a ello vino el apogeo de un monton de peliculas junto a avances tecnologicos y desarrollo exponencial de la industria cinematografica.
 
- [Tabla de Contenidos](#tabla-de-contenidos)
-=======
  A partir de la década de 1990, sobre todo de los 2000 en adelante, la tecnología digital comenzó a revolucionar la producción y distribución de películas. El auge de Internet también cambió la forma en que las películas se promocionaban y se distribuían. Acompañado a ello vino el apogeo de un montón de películas junto a avances tecnológicos y desarrollo exponencial de la industria cinematográfica.
 
 
@@ -156,14 +155,12 @@ Para finalizar, se realiza la disponibilizacion en un servicio web para que pued
 ## Fuente de datos
 
 + [Dataset](https://drive.google.com/drive/folders/1mfUVyP3jS-UMdKHERknkQ4gaCRCO2e1v): Carpeta con los 2 archivos con datos que requieren ser procesados (movies_dataset.csv y credits.csv), tengan en cuenta que hay datos que estan anidados (un diccionario o una lista como valores en la fila).
-+ [Diccionario de datos](https://docs.google.com/spreadsheets/d/1QkHH5er-74Bpk122tJxy_0D49pJMIwKLurByOfmxzho/edit#gid=0): Diccionario con algunas descripciones de las columnas disponibles en el dataset.
++ [Diccionario de datos](https://docs.google.com/spreadsheets/d/1QkHH5er-74Bpk122tJxy_0D49pJMIwKLurByOfmxzho/edit#gid=0): Diccionario con algunas descripciones de las columnas disponibles en el dataset..
 
 
 [Tabla de Contenidos](#tabla-de-contenidos)
 
-## Video Deploy
-+ [Video](https://drive.google.com/file/d/1uGitaE-bxqTLBstm2RpZiYsGZ_pokkSk/view?usp=drive_link)
-=======
+
 # Video Deploy
 + [Video](https://drive.google.com/file/d/1uGitaE-bxqTLBstm2RpZiYsGZ_pokkSk/view?usp=drive_link) Video con el deploy y la prueba de las funciones.
 
